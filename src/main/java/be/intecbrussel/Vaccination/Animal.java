@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Stream;
 
-public abstract class Animal implements intec.be.Treatable, intec.be.Vaccinateable {
+public abstract class Animal implements Treatable,Vaccinateable {
 
     private Map<Disease,Boolean> isVaccinated=new HashMap<>();
     private boolean isClean;

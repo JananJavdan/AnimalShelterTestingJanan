@@ -4,25 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60300e02-f283-4fba-a833-d989cff80f08" name="Changes" comment="https://github.com/JananJavdan/VaccinationTesting.git">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Vaccination/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Vaccination/AnimalShelter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Vaccination/AnimalShelter1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Vaccination/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Vaccination/Disease.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Vaccination/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Vaccination/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Vaccination/MainApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Vaccination/MainApp1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Vaccination/Monkey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Vaccination/Treatable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Vaccination/Vaccinateable.java" afterDir="false" />
+    <list default="true" id="60300e02-f283-4fba-a833-d989cff80f08" name="Changes" comment="Add files via upload">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Vaccination/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Vaccination/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Vaccination/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Vaccination/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Vaccination/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Vaccination/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Vaccination/MainApp1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Vaccination/MainApp1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,31 +17,44 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Janan Javdan &lt;fatemeh.javdan@student.intecbrussel.be&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2bImtxXjlD3sbo44mhH0q2Ikd23" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/intec/IdeaProjects/Vaccination",
-    "onboarding.tips.debug.path": "C:/Users/intec/MavenProjects/VaccinationTesting/src/main/java/org/example/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/intec/IdeaProjects/Vaccination&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/intec/MavenProjects/VaccinationTesting/src/main/java/org/example/Main.java&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\intec\MavenProjects\VaccinationTesting\src\test\java\be\intecbrussel\AnimalShelterTest" />
       <recent name="C:\Users\intec\MavenProjects\VaccinationTesting\src\main\java\be\intecbrussel\Vaccination" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.16-jbr_dcevm-11.0.16-249ae16d76d6-4bd46b1b" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -65,11 +65,37 @@
       <option name="presentableId" value="Default" />
       <updated>1705911186197</updated>
     </task>
+    <task id="LOCAL-00001" summary="https://github.com/JananJavdan/VaccinationTesting.git">
+      <option name="closed" value="true" />
+      <created>1705912628450</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1705912628450</updated>
+    </task>
+    <task id="LOCAL-00002" summary="https://github.com/JananJavdan/VaccinationTesting.git">
+      <option name="closed" value="true" />
+      <created>1705912667737</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1705912667737</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add files via upload">
+      <option name="closed" value="true" />
+      <created>1706012430280</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706012430280</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="https://github.com/JananJavdan/VaccinationTesting.git" />
-    <option name="LAST_COMMIT_MESSAGE" value="https://github.com/JananJavdan/VaccinationTesting.git" />
+    <MESSAGE value="Add files via upload" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add files via upload" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

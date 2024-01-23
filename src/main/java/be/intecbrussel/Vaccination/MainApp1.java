@@ -1,4 +1,4 @@
-package intec.be;
+package be.intecbrussel.Vaccination;
 
 import be.intecbrussel.Vaccination.AnimalShelter1;
 import be.intecbrussel.Vaccination.Cat;
@@ -11,7 +11,7 @@ public class MainApp1 {
     public static void main(String[] args) {
         //creating objects
         AnimalShelter1 animalShelter1 = new AnimalShelter1();
-        intec.be.Monkey jon = new Monkey(true, 28, "Jonathan", 28, true);
+        Monkey jon = new Monkey(true, 28, "Jonathan", 28, true);
         Monkey mary = new Monkey(false, 29, "mary", 29, true);
         Monkey leen = new Monkey(true, 27, "leen", 27, false);
         Monkey martin = new Monkey(false, 26, "martin", 26, false);

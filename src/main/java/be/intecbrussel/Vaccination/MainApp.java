@@ -20,9 +20,9 @@ public class MainApp {
         Animal cat2 = new Cat(false, 2, "KittY", 376, true);
         Animal cat3 = new Cat(false, 1, "Lola", 398, true);
         Animal cat4 = new Cat(false, 7, "Nali", 798, true);
-        Animal monkey1 = new intec.be.Monkey(false, 11, "Kimmy", 213, true);
-        Animal monkey2 = new intec.be.Monkey(false, 15, "Jolly", 331, true);
-        Animal monkey3 = new intec.be.Monkey(false, 10, "Perry", 453, true);
+        Animal monkey1 = new Monkey(false, 11, "Kimmy", 213, true);
+        Animal monkey2 = new Monkey(false, 15, "Jolly", 331, true);
+        Animal monkey3 = new Monkey(false, 10, "Perry", 453, true);
 
         animals.add(dog1);
         animals.add(dog2);
