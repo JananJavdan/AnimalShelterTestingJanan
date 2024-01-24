@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="60300e02-f283-4fba-a833-d989cff80f08" name="Changes" comment="Add files via upload">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Vaccination/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Vaccination/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Vaccination/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Vaccination/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Vaccination/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Vaccination/MainApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Vaccination/MainApp1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Vaccination/MainApp1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +85,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706012430280</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add files via upload">
+      <option name="closed" value="true" />
+      <created>1706012581568</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706012581568</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
