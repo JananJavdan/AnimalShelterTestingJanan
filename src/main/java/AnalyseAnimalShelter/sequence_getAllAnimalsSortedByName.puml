@@ -1,0 +1,24 @@
+@startuml
+
+User -> AnimalShelterApp : inputs name
+User -> AnimalShelterApp : inputs all animals
+
+AnimalShelterApp -> AnimalService : sortAnimalShelter(SortType: name)
+AnimalService -> AnimalRepository : getAllAnimals()
+AnimalService <- AnimalRepository : void
+
+alt sorting All Animal
+AnimalShelterApp -> AnimalService : sortAllAnimal (List<Animal>)
+else (no)
+AnimalShelterApp -> AnimalService : not found sorted animals
+end
+
+
+
+alt Sorting by name
+AnimalService -> AnimalService : sortAnimalsByName(List<Animal>)
+end
+
+AnimalShelterApp <-- AnimalService : void
+User <-- AnimalShelterApp : OK message
+@enduml

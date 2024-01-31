@@ -1,0 +1,28 @@
+@startuml
+
+User -> AnimalShelterApp : clean animal , vaccinate animal
+User -> AnimalShelterApp : inputs name or age
+
+alt clean Animal
+AnimalShelterApp -> AnimalService : cleanAnimalShelter(Disease: CHICKENPOCKS,FLUE, POLIO,HEPATITISA)
+end
+alt vaccinate Animal
+AnimalShelterApp -> AnimalService : vaccinate Animal
+end
+
+AnimalService -> AnimalRepository : getAnimals()
+AnimalService <-- AnimalRepository : ListVaccinateAnimal<Animal>
+
+alt treatAnimalsByName
+AnimalService -> AnimalService : treatAnimalsByName(List<Animal>)
+
+
+else  treatAnimalsByAge
+AnimalService -> AnimalService : treatAnimalsByAge(List<Animal>)
+end
+
+AnimalRepository --> AnimalShelterApp : cleanAnimalShelter
+
+User <-- AnimalShelterApp : OK message
+
+@enduml

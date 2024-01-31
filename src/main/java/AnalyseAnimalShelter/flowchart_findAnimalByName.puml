@@ -1,0 +1,13 @@
+@startuml
+start
+:user provides sorting methode;
+:system retrieves the animals;
+:system finding the animal by name;
+if (finding animal by name) then (yes)
+:system retrieves the animal;
+:system finding animal by name);
+end
+else (no)
+:Error: can not found de oldeste animals;
+end
+@enduml

@@ -1,0 +1,21 @@
+@startuml
+User -> AnimalShelterApp : input List<Animal>Dog, Cat ,Monkey
+
+
+AnimalShelterApp -> AnimalService : addAnimalShelter
+AnimalShelterApp <- AnimalService : void
+
+alt
+AnimalShelterApp -> AnimalService : addAnimalID
+AnimalShelterApp -> AnimalService : boolean isClean, int age, String name, int animalNumber, boolean hasFoulBreath)
+AnimalShelterApp <-- AnimalService : void
+end
+
+AnimalService -> AnimalRepository : getAnimals()
+AnimalService <-- AnimalRepository : List<Animal>
+
+
+
+User <- AnimalShelterApp : ok
+
+@enduml
