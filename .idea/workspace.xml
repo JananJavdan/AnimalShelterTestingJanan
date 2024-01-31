@@ -4,18 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60300e02-f283-4fba-a833-d989cff80f08" name="Changes" comment="Add files via upload">
-      <change afterPath="$PROJECT_DIR$/src/main/java/AnalyseAnimalShelter/flowchart_findAnimalByName.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AnalyseAnimalShelter/flowchart_getAllAnimalsSortedByName.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AnalyseAnimalShelter/flowchart_returnallanimals.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AnalyseAnimalShelter/sequence_addanimals.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AnalyseAnimalShelter/sequence_findAnimalByName.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AnalyseAnimalShelter/sequence_findanimal.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AnalyseAnimalShelter/sequence_getAllAnimalsSortedByName.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AnalyseAnimalShelter/sequence_returnallanimals.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AnalyseAnimalShelter/sequence_treatanimals.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/intecbrussel/AnimalShelterTest/AnimalShelterTest.java" afterDir="false" />
+    <list default="true" id="60300e02-f283-4fba-a833-d989cff80f08" name="Changes" comment="Add files">
+      <change afterPath="$PROJECT_DIR$/src/main/java/AnalyseAnimalShelter/UseCaseDiagram.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AnalyseAnimalShelter/flowchart_addanimals.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AnalyseAnimalShelter/flowchart_findanimals.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AnalyseAnimalShelter/flowchart_sortanimals.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AnalyseAnimalShelter/flowchart_treatanimals.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AnalyseAnimalShelter/sequence_sortanimals.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/intecbrussel/AnimalShelterTest/AnimalShelterTest1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/be/intecbrussel/AnimalShelterTest/AnimalShelterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/be/intecbrussel/AnimalShelterTest/AnimalShelterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +53,10 @@
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/intec/IdeaProjects/Vaccination",
     "onboarding.tips.debug.path": "C:/Users/intec/MavenProjects/VaccinationTesting/src/main/java/org/example/Main.java",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -140,13 +141,22 @@
       <option name="project" value="LOCAL" />
       <updated>1706107806437</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add files">
+      <option name="closed" value="true" />
+      <created>1706708963388</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1706708963388</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="https://github.com/JananJavdan/VaccinationTesting.git" />
     <MESSAGE value="Add files via upload" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add files via upload" />
+    <MESSAGE value="Add files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

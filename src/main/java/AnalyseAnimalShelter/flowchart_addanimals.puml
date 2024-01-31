@@ -1,0 +1,13 @@
+@startuml
+
+start
+:user provides animal;
+if (animal already in shelter) then (yes)
+    :error message;
+    end;
+else (no)
+    :set ID to animal;
+    :add animal to shelter;
+    end
+
+@enduml

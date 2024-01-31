@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AnimalShelterTest {
 
-    private AnimalShelter animalShelter;
+    private final AnimalShelter animalShelter;
 
     {
         animalShelter = new AnimalShelter();

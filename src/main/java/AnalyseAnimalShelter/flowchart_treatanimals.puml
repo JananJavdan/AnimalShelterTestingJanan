@@ -1,0 +1,15 @@
+@startuml
+
+start
+:user provides the animal to treat;
+:clean the animal;
+:vaccinate the animal;
+
+if (teat animal by name) then(yes)
+ :system treat the (teat animal by name);
+ stop;
+ else (no, treat by age)
+ :system treat the animal by age;
+end;
+
+@enduml
