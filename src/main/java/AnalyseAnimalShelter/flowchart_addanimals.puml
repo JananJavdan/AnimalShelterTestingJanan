@@ -3,7 +3,7 @@
 start
 :user provides animal;
 if (animal already in shelter) then (yes)
-    :error message;
+    :List Animals;
     end;
 else (no)
     :set ID to animal;

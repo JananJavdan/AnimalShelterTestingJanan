@@ -3,22 +3,30 @@
 User -> AnimalShelterApp : inputs name
 User -> AnimalShelterApp : inputs all animals
 
-AnimalShelterApp -> AnimalService : sortAnimalShelter(SortType: name)
+AnimalShelterApp -> AnimalService : getAllAnimalsSortedByName(SortType: name)
 AnimalService -> AnimalRepository : getAllAnimals()
-AnimalService <- AnimalRepository : void
+AnimalService <-- AnimalRepository : List<Animal>
 
-alt sorting All Animal
-AnimalShelterApp -> AnimalService : sortAllAnimal (List<Animal>)
-else (no)
-AnimalShelterApp -> AnimalService : not found sorted animals
-end
-
-
-
-alt Sorting by name
-AnimalService -> AnimalService : sortAnimalsByName(List<Animal>)
-end
-
-AnimalShelterApp <-- AnimalService : void
+AnimalShelterApp <-- AnimalService : List<Animal>
 User <-- AnimalShelterApp : OK message
+
+@enduml
+
+@startuml
+
+start
+
+: user provides getAllAnimals method;
+:print list of getAnimals;
+end;
+@enduml
+
+@startuml
+user--> AnimalShelterApp : input to get list of animals
+AnimalShelterApp --> AnimalService : getListOfAnimals()
+AnimalService --> AnimalRepository : getAnimals()
+AnimalService <-- AnimalRepository : list<Animal>
+AnimalShelterApp <-- AnimalService : list<Animal>
+user <-- AnimalShelterApp : list<Animal>
+
 @enduml

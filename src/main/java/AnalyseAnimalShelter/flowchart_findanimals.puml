@@ -77,21 +77,17 @@ stop
 
 start
 :User provides find method;
-if (Sorting by name?) then (yes)
+if (finding by name?) then (yes)
   :System retrieves the animals;
-  :System sorts animals by name;
+  :System find animals by name;
 else (no)
   endif
 
-if (Sorting by age?) then (yes)
-  :System retrieves the animals;
-  :System sorts animals by age;
-else (no)
-  endif
 
-if (Sorting by id?) then (yes)
+
+if (finding by id?) then (yes)
   :System retrieves the animals;
-  :System sorts animals by id;
+  :System find animals by id;
 else (no)
   :Error: can only sort by age, name, or id;
 endif

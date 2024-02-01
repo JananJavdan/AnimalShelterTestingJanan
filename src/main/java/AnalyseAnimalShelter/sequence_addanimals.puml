@@ -1,9 +1,12 @@
 @startuml
-User -> AnimalShelterApp : input List<Animal>Dog, Cat ,Monkey
+User -> AnimalShelterApp : input List<Animal>
 
 
-AnimalShelterApp -> AnimalService : addAnimalShelter
-AnimalShelterApp <- AnimalService : void
+AnimalShelterApp -> AnimalService : addAnimal
+AnimalShelterApp <-- AnimalService : void
+
+AnimalService -> AnimalRepository : addAnimal
+AnimalRepository --> AnimalService : error message
 
 alt
 AnimalShelterApp -> AnimalService : addAnimalID
@@ -16,6 +19,6 @@ AnimalService <-- AnimalRepository : List<Animal>
 
 
 
-User <- AnimalShelterApp : ok
+User <-- AnimalShelterApp : ok
 
 @enduml

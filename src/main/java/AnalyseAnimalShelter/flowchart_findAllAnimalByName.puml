@@ -1,0 +1,8 @@
+@startuml
+start
+:user provides  name;
+:system retrieves the animals;
+:system finding the animal by name ;
+:return find animal by name;
+end
+@enduml

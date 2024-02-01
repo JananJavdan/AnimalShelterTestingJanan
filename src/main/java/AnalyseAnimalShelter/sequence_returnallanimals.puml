@@ -3,22 +3,10 @@ User -> AnimalShelterApp : input List<Animal>
 AnimalShelterApp -> AnimalService : sortAnimals
 AnimalService --> AnimalShelterApp : List<Animal>
 
-AnimalService -> AnimalRepository :
 
-alt AllAnimal
 AnimalShelterApp -> AnimalRepository : returnAllAnimal
 
 
-alt AllSortedAnimal
-AnimalShelterApp <- AnimalRepository : sortAnimals;
-AnimalShelterApp <- AnimalRepository : returnAllAnimal;
-end
-
-alt AllCleanAnimal
-AnimalShelterApp <- AnimalRepository : vaccinated;
-AnimalShelterApp <- AnimalRepository : returnAllAnimal;
-
-end
 AnimalShelterApp <-- AnimalRepository : returnAllAnimal
 
 User <-- AnimalShelterApp : OK message

@@ -18,6 +18,7 @@ User <-- AnimalShelterApp : OK message
 
 @enduml
 
+
 @startuml
 
 User -> AnimalShelterApp : inputs name or age
@@ -43,3 +44,26 @@ backend_controller <- backend_service
 frontend <- backend_controller
 user <- frontend
 @enduml
+@startuml
+start
+: user Provides getAllTheAnimalsSortedByName Method;
+: System retrieves the animals;
+: System sorts the animals by name ;
+: return list;
+end;
+@enduml
+
+@startuml
+user --> AnimalShelterApp  : Sort Animals by name
+AnimalShelterApp --> AnimalService : getAllTheAnimalsSortedByName()
+AnimalService --> AnimalRepository : getAnimals()
+AnimalService <-- AnimalRepository : List<Animal>
+
+AnimalService --> AnimalService : sortAnimalsByName(List<Animal>)
+
+AnimalShelterApp <-- AnimalService : return Sorted list of animals
+user <-- AnimalShelterApp : get sorted list of animals
+
+
+
+@endum

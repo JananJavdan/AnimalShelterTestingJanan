@@ -1,19 +1,16 @@
 @startuml
 
 User -> AnimalShelterApp : inputs name or age
-AnimalShelterApp -> AnimalService : findAnimalShelter()
+AnimalShelterApp -> AnimalService : findAnimal()
+
 
 AnimalService -> AnimalRepository : getAnimals()
-AnimalService <-- AnimalRepository : List<Animal>
 
 
 
 alt finding by name
 AnimalService -> AnimalService : findAnimalsByName(List<Animal>)
 
-else finding by age
-AnimalService -> AnimalService : findAnimalsByAge(List<Animal>)
-end
 
 AnimalService -> AnimalRepository : getAnimals()
 
@@ -24,6 +21,8 @@ else (no)
 AnimalService -> AnimalService : :Error: can not found  animals by name;
 end
 AnimalService <-- AnimalRepository : List<Animal>
+
+AnimalService --> AnimalShelterApp
 
 User <-- AnimalShelterApp : OK message
 @enduml

@@ -115,22 +115,21 @@ class AnimalShelterTest {
 
     @Test
     void findAnimalByNumberTest() {
-        Animal monkey1 = new Monkey(true, 28, "Jonathan", 28, true);
-        Animal monkey2 = new Monkey(false, 29, "mary", 29, true);
-        Animal monkey3 = new Monkey(true, 27, "leen", 27, false);
-        Animal monkey4 = new Monkey(false, 26, "martin", 26, false);
+        Animal monkey1 = new Monkey(false, 11, "Kimmy", 213, true);
+        Animal monkey2 = new Monkey(false, 15, "Jolly", 331, true);
+        Animal monkey3 = new Monkey(false, 10, "Perry", 453, true);
 
         animalShelter.addAnimal(monkey1);
         animalShelter.addAnimal(monkey2);
         animalShelter.addAnimal(monkey3);
-        animalShelter.addAnimal(monkey4);
 
-        Optional<Animal> foundAnimal4 = animalShelter.findAnimal(4);
-        Optional<Animal> foundAnimal2 = animalShelter.findAnimal(2);
-        Optional<Animal> foundAnimal1 = animalShelter.findAnimal(1);
 
-        assertTrue(foundAnimal4.isPresent());
-        assertEquals(monkey4, foundAnimal4.get());
+        Optional<Animal> foundAnimal3 = animalShelter.findAnimal(453);
+        Optional<Animal> foundAnimal2 = animalShelter.findAnimal(331);
+        Optional<Animal> foundAnimal1 = animalShelter.findAnimal(213);
+
+        assertTrue(foundAnimal3.isPresent());
+        assertEquals(monkey3, foundAnimal3.get());
 
         assertTrue(foundAnimal2.isPresent());
         assertEquals(monkey2, foundAnimal2.get());
@@ -142,17 +141,16 @@ class AnimalShelterTest {
 
     @Test
     void findAnimalByNameTest() {
-        Animal monkey1 = new Monkey(true, 28, "Jonathan", 28, true);
-        Animal monkey2 = new Monkey(false, 29, "mary", 29, true);
-        Animal monkey3 = new Monkey(true, 27, "leen", 27, false);
-        Animal monkey4 = new Monkey(false, 26, "martin", 26, false);
+        Animal monkey1 = new Monkey(false, 11, "Kimmy", 213, true);
+        Animal monkey2 = new Monkey(false, 15, "Jolly", 331, true);
+        Animal monkey3 = new Monkey(false, 10, "Perry", 453, true);
+
 
         animalShelter.addAnimal(monkey1);
         animalShelter.addAnimal(monkey2);
         animalShelter.addAnimal(monkey3);
-        animalShelter.addAnimal(monkey4);
 
-        Optional<Animal> foundAnimal = animalShelter.findAnimal(3);
+        Optional<Animal> foundAnimal = animalShelter.findAnimal(453);
 
         assertTrue(foundAnimal.isPresent());
         assertEquals("Cheeky", foundAnimal.get().getName());
@@ -176,30 +174,29 @@ class AnimalShelterTest {
 
     @Test
     void treatAnimalByNumberTest() {
-        Animal dog = new Dog(false, 5, "Charlie", 1, true);
+        Animal monkey = new Monkey(true, 28, "Jonathan", 28, true);
 
-        animalShelter.addAnimal(dog);
+        animalShelter.addAnimal(monkey);
 
         ByteArrayOutputStream outPut = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outPut));
 
-        animalShelter.treatAnimal(1);
+        animalShelter.treatAnimal(222);
 
-        String expectedOutput = "Searching for animal with animal number : 1\n" +
-                "Animal found: isClean=false, age=5, name='Charlie', animalNumber=1\n" +
-                "Animal with number 1 is being treated.\n" +
-                "isClean=true, age=5, name='Charlie', animalNumber=1\n";
+        String expectedOutput =
+                "Animal with number 28 is being treated.\n" +
+                "isClean=true, age=28  name='Jonathan', animalNumber=28\n";
 
         assertEquals(expectedOutput, outPut.toString());
     }
 
     @Test
     void treatAnimalByNameTest() {
-        Animal dog = new Dog(false, 5, "Max", 1, true);
-        Animal cat = new Cat(false, 3, "Max", 2, false);
+        Animal jon = new Monkey(true, 28, "Jonathan", 28, true);
+        Animal leen = new Monkey(true, 27, "leen", 27, false);
 
-        animalShelter.addAnimal(dog);
-        animalShelter.addAnimal(cat);
+        animalShelter.addAnimal(jon);
+        animalShelter.addAnimal(leen);
 
         ByteArrayOutputStream outPut = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outPut));
@@ -207,20 +204,20 @@ class AnimalShelterTest {
         animalShelter.treatAnimal("Max");
 
         String expectedOutput = "Searching for animal with name : Max\n" +
-                "Animal found: isClean=false, age=5, name='Max', animalNumber=1\n" +
+                "Animal found: isClean=true, age=28, name='Jonathan', animalNumber=28\n" +
                 "Animal with name Max is being treated.\n" +
-                "isClean=true, age=5, name='Max', animalNumber=1\n";
+                "isClean=true, age=27, name='leen', animalNumber=27\n";
 
         assertEquals(expectedOutput, outPut.toString());
     }
 
     @Test
     void treatAllAnimalsTest() {
-        Animal dog = new Dog(false, 5, "Charlie", 1, true);
-        Animal cat = new Cat(false, 3, "Buddy", 2, false);
+        Animal dog1 = new Dog(false, 3, "Noel", 123, true);
+        Animal cat1 = new Cat(false, 3, "Mitzi", 345, true);
 
-        animalShelter.addAnimal(dog);
-        animalShelter.addAnimal(cat);
+        animalShelter.addAnimal(dog1);
+        animalShelter.addAnimal(cat1);
 
         ByteArrayOutputStream outPut = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outPut));

@@ -1,11 +1,8 @@
 @startuml
-:user provides all animals to shelter;
+:user provides all animals ;
 :system retrieves the animals;
-if (animal) then (sorted)
-:system retrieves the animals;
-:sortAnimal;
-else (animal) (clean)
-:system retrieves the animals;
-:ListAnimal;
+:system return All Animals;
+stop;
+
 
 @enduml
