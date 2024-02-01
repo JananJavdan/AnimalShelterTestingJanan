@@ -73,13 +73,17 @@ public class AnimalService {
         }
         }
     //////////////////////////////////////////////////////////////////////addAnimal
-    public void addAnimal(List<Animal> animalList){
-    //   animalList.add(1,);
+    public void addAnimal(List<String> animalList){
+        (animalList.add(1,"Bob");
+        if (animalList.isEmpty())
+        System.out.println("error massage");
     }
 
-
+    /////////////////////////////////////////////////////returnAllAnimal
+    public List<Animal> returnAllAnimals(){
+                return animalRepository.getAnimals();
     }
-
+}
 
 
 
