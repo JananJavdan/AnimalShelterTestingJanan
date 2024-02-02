@@ -8,11 +8,7 @@ AnimalShelterApp <-- AnimalService : void
 AnimalService -> AnimalRepository : addAnimal
 AnimalRepository --> AnimalService : error message
 
-alt
-AnimalShelterApp -> AnimalService : addAnimalID
-AnimalShelterApp -> AnimalService : boolean isClean, int age, String name, int animalNumber, boolean hasFoulBreath)
-AnimalShelterApp <-- AnimalService : void
-end
+
 
 AnimalService -> AnimalRepository : getAnimals()
 AnimalService <-- AnimalRepository : List<Animal>

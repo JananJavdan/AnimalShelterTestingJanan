@@ -1,16 +1,12 @@
 package AnimalShelterClasses.service;
 
 import AnimalShelterClasses.model.Animal;
-import AnimalShelterClasses.model.Desease;
 import AnimalShelterClasses.model.SortType;
 import AnimalShelterClasses.repository.AnimalRepository;
 
-import javax.naming.Name;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import static AnimalShelterClasses.model.SortType.NAME;
 import static AnimalShelterClasses.model.SortType.valueOf;
 
 public class AnimalService {
@@ -24,7 +20,7 @@ public class AnimalService {
         this.animalService = animalService;
     }
 
-////////////////////////////////////////////////////////////////////////////////////methode sortAnimal
+///methode sortAnimal
     public void sortAnimalShelter(SortType sortType){
         List<Animal> animalList = animalRepository.getAnimals();
 
@@ -42,7 +38,7 @@ public class AnimalService {
 
     public void sortAnimalsByAge(List<Animal> animalList){
         animalList.sort(Comparator.comparing(Animal::getAge));
-    }////////////////////////////////////////////////////////////////////////////////methode treat Animal
+    }///methode treat Animal
     public void treatAnimal(SortType sortType){
         List<Animal> animalList = animalRepository.getAnimals();
 
@@ -58,32 +54,44 @@ public class AnimalService {
     public void treatAnimalByName(List<Animal> animalList){
         animalList.sort(Comparator.comparing(Animal::getName));
     }
-    //////////////////////////////////////////////////////////////////////////////////////methode get all animal sorted by name
-    public AnimalRepository getAllAnimalsSortedByName(SortType sortType){
-        return animalRepository;
-        }//////////////////////////////////////////////////////////////////////////////methode findAllAnimalByName
-        public void findAllAnimalByName(){
+    ///methode get all animal sorted by name
+    public List<Animal> getAllAnimalsSortedByName(SortType sortType){
+        return animalRepository.getAllAnimalSortedByName();
+        }
+
+        //methode findAllAnimalByName
+        public List<Animal> findAllAnimalByName(){
         List<Animal> animalListAll = animalRepository.getAllAnimalSortedByName();
+            return animalListAll;
         }
-////////////////////////////////////////////////////////////////////////////////methode findAnAnimal
-    public void findAnAnimal(Animal animal){
-        List<Animal> animalList = animalService.animalRepository.getAnimals();
-        for (Animal animal1 : animalList){
-            System.out.println();
+//methode findAnAnimal
+    public List<Animal> findAnAnimal(String nameOrAge){
+        if (equals(nameOrAge)){
+            return findAnimalsByAge(Integer.parseInt(nameOrAge));
+            }else
+                return findAnimalsByName(nameOrAge);
         }
+        private List<Animal> findAnimalsByName(String name){
+        return animalRepository.getAnimalsByName(name);
         }
-    //////////////////////////////////////////////////////////////////////addAnimal
-    public void addAnimal(List<String> animalList){
-        (animalList.add(1,"Bob");
-        if (animalList.isEmpty())
-        System.out.println("error massage");
+        private List<Animal> findAnimalsByAge(int age){
+        return animalRepository.getAnimalsByAge(age);
+        }
+    ///methode addAnimal
+    public void addAnimal(List<Animal> animals){
+        animalRepository.addAnimal(animals);
+    }
+    public List<Animal> getAnimals(){
+        return animalRepository.getAnimals();
     }
 
-    /////////////////////////////////////////////////////returnAllAnimal
-    public List<Animal> returnAllAnimals(){
-                return animalRepository.getAnimals();
+    //methode returnAllAnimal
+    public List<Animal> returnAllAnimals(SortType sortType){
+        return animalRepository.returnAllAnimals();
     }
-}
+        }
+
+
 
 
 
